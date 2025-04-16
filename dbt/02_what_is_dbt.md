@@ -18,7 +18,9 @@
 
 ```mermaid
 
-    Raw Data > dbt Models (Transformations) > Cleaned & Transformed Data
+    graph TD;
+        Raw_Data --> dbt_Models_Transformations;
+        dbt_Models_Transformations --> Cleaned_&_Transformed_Data;
     
 ```
 ## 🕰️ Before vs After dbt
